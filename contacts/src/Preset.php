@@ -9,7 +9,8 @@ class Preset extends LaravelPreset
 {
     public static function install()
     {
-        static::cleanSassDirectory();
+        echo 'test works - see preset.php file of contacts package';
+        // static::cleanSassDirectory();
     }
 
     public static function cleanSassDirectory()
