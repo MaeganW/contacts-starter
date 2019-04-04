@@ -26,11 +26,11 @@ class ContactsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
         include __DIR__.'/routes/web.php';
 
         $this->publishes([
             __DIR__.'/migrations' => base_path('database/migrations'),
+            __DIR__.'/models' => base_path('Providers/'),
         ]);
 
         PresetCommand::macro('testing', function($command){
